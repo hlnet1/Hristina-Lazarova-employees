@@ -9,7 +9,7 @@ Just a few different date formats are implemented in this demo.
 4.localhost:8088 click EMPLOYEE PAIRS to get the output
 
 Repository URL
-https://github.com/hlnet1/Christina-Lazarova-employees.git
+https://github.com/hlnet1/Hristina-Lazarova-employees.git
 
 Technologies
 Java - JDK17
