@@ -1,15 +1,10 @@
+Sping MVC + Thymeleaf
 
-Demo version of REST API reading data from src/resources/static.The output is employee pairs on the same project with max time ovelapping and is displayed in the browser as a datagrid with 4 columns resp Employee ID #1, Employee ID #2, Project ID, Days worked.
-Few different date formats are supported.
-
-
-1.Clone the repository locally
-2.Single data file is supported in current version. It is located in Employees/src/main/resources and can be replaced by a new file with the same name
+1.git clone https://github.com/hlnet1/Hristina-Lazarova-employees.git
 3.Run EmployeesApplication.java
-4.localhost:8080 click EMPLOYEE PAIRS to get the output
+4.localhost:8080 click to choose and upload a csv file
 
-Repository URL
-https://github.com/hlnet1/Hristina-Lazarova-employees.git
+Output: Datagrid with Employee pairs with max time overlapping on same project. All pairs with same duration are dispalayed
 
 Technologies
 Java - JDK17
@@ -18,4 +13,4 @@ IDE
 IntelliJ Idea Ultimate - JetBrains
 
 Version
-0.0.1-SNAPSHOT
+1.0.1-SNAPSHOT
