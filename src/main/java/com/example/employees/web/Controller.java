@@ -33,6 +33,5 @@ public class Controller {
     @ExceptionHandler({ NoSuchElementException.class })
     public void handleUnabletoReallocate(Exception ex) {
         log.error("Exception is: ", ex);
-        // just return empty 501
     }
 }
