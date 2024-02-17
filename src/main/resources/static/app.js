@@ -19,14 +19,17 @@ function onLoadEmployees() {
 
       let firstEmployeeIdCol = document.createElement('td')
       let secondEmployeeIdCol	= document.createElement('td')
+      let projectIdCol	= document.createElement('td')
       let daysWorkedCol	= document.createElement('td')
 
         firstEmployeeIdCol.textContent = employee.firstEmployeeId
         secondEmployeeIdCol.textContent = employee.secondEmployeeId
-        daysWorkedCol.textContent = employee.daysWorkedId
+        projectIdCol.textContent = employee.projectId
+        daysWorkedCol.textContent = employee.totalDuration
 
         employeeRow.appendChild(firstEmployeeIdCol)
         employeeRow.appendChild(secondEmployeeIdCol)
+        employeeRow.appendChild(projectIdCol)
         employeeRow.appendChild(daysWorkedCol)
 
         employeesContainer.append(employeeRow)
