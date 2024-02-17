@@ -3,10 +3,7 @@ package com.example.employees.repository;
 import com.example.employees.entity.Employee;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Repository
 public class EmployeeRepository {
@@ -18,8 +15,8 @@ private Map<Long,List<Employee>> emplByProjectId = new HashMap<>();
         emplByProjectId.get(projectId).add(employee);
     }
 
-    public void saveAll(List<Employee> employees) {
-    employees.stream().forEach(empl -> this.save(empl));
+    public void saveAll(Set<Employee> employees) {
+    employees.forEach(this::save);
         }
 
     public List<Employee> getEmployeesByProject(long projectId) {
@@ -28,6 +25,10 @@ private Map<Long,List<Employee>> emplByProjectId = new HashMap<>();
 
     public List<Long> getAllProjects(){
         return emplByProjectId.keySet().stream().toList();
+    }
+
+    public void deleteAll(){
+        emplByProjectId.clear();
     }
 
 

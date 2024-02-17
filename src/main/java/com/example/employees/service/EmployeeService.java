@@ -18,12 +18,13 @@ public class EmployeeService {
         this.employeeRepository = employeeRepository;
     }
 
-    public void addAllEmployee(List<Employee> employees){
-    this.employeeRepository.saveAll(employees);
-    }
 
     public List<Employee> getAllEmployees(long projectId) {
         return this.employeeRepository.getEmployeesByProject(projectId);
+    }
+
+    public void deleteData(){
+        this.employeeRepository.deleteAll();
     }
 
     public List<Long> getAllProjects() {
